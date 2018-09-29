@@ -30,14 +30,14 @@ int main() {
     char cmps1 [] = "heyy";
     printf("Testing strcmp with %s and %s\n", cmps0, cmps1);
     printf("[standard]: %d\n", strcmp(cmps0, cmps1));
-    printf("[mine]:\n");
+    printf("[mine]: %d\n", mystrcmp(mycmps0, mycmps1));
 
-    // char mys [256] = "ello";
-    // char myc = 'l';
-    // char s [256] = "ello";
-    // char c [] = "l";
-    // printf("Testing strchr with %s\n", mys, myc);
-    // printf("[standard]: %s\n", strchr(s, c));
-    // printf("[mine]:\n");
+    char mys [256] = "ello";
+    char myc = 'l';
+    char s [256] = "ello";
+    char c = 'l';
+    printf("Testing strchr with %s and %c\n", mys, myc);
+    printf("[standard]: %s\n", strchr(s, c));
+    printf("[mine]: %s\n", mystrchr(mys, myc));
     return 0;
 }
