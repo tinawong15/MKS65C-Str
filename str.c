@@ -13,7 +13,8 @@ int mystrlen(char *s) {
 char * mystrncat(char * dest, char * source, int n) {
   int lenDest = mystrlen(dest);
   // printf("%d\n", lenDest);
-  char *p = dest + lenDest;
+  char *p = dest + lenDest; // set the pointer at the end of dest
+  // while reaching the end of source or reaching n characters
   while(* source && n) {
     *p = *source;
     p++;

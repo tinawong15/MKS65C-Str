@@ -13,9 +13,9 @@ int main() {
     printf("[mine]:\n");
 
     char myDest [256] = "goodbye";
-  	char mySrc[] = "ciao";
+    char mySrc[] = "ciao";
     char dest [256] = "goodbye";
-  	char src [] = "ciao";
+    char src [] = "ciao";
     printf("Testing strncat with %s and %s\n", dest, src);
     printf("[standard]: %s\n", strncat(dest, src, 2));
     printf("[mine]: %s\n", mystrncat(myDest, mySrc, 2));
