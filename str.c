@@ -10,26 +10,15 @@ int mystrlen(char *s) {
   return count;
 }
 
-int main() {
-    char * str = "hello";
-    printf("Testing strlen with %s\n", str);
-    printf("[standard]: %lu\n", strlen(str));
-    printf("[mine]: %d\n", mystrlen(str));
-
-    printf("Testing strcpy with %s\n", str);
-    printf("[standard]:\n");
-    printf("[mine]:\n");
-
-    printf("Testing strncat with %s\n", str);
-    printf("[standard]:\n");
-    printf("[mine]:\n");
-
-    printf("Testing strcmp with %s\n", str);
-    printf("[standard]:\n");
-    printf("[mine]:\n");
-
-    printf("Testing strchr with %s\n", str);
-    printf("[standard]:\n");
-    printf("[mine]:\n");
-    return 0;
+char * mystrncat(char * dest, char * source, int n) {
+  int lenDest = mystrlen(dest);
+  // printf("%d\n", lenDest);
+  char *p = dest + lenDest;
+  while(* source && n) {
+    *p = *source;
+    p++;
+    source++;
+    n--;
+  }
+	return dest;
 }
