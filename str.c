@@ -10,6 +10,10 @@ int mystrlen(char *s) {
   return count;
 }
 
+char * mystrcpy( char *dest, char *source ) {
+  return dest;
+}
+
 char * mystrncat(char * dest, char * source, int n) {
   int lenDest = mystrlen(dest);
   // printf("%d\n", lenDest);
@@ -21,5 +25,13 @@ char * mystrncat(char * dest, char * source, int n) {
     source++;
     n--;
   }
-	return dest;
+  return dest;
+}
+
+int mystrcmp( char *s1, char *s2 ) {
+  return 0;
+}
+
+char * mystrchr( char *s, char c ) {
+  return s;
 }
