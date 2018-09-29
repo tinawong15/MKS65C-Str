@@ -14,7 +14,7 @@ int main() {
     char cpysrc [] = "hi";
     printf("Testing strcpy with %s and %s\n", cpydest, cpysrc);
     printf("[standard]: %s\n", strcpy(cpydest, cpysrc));
-    printf("[mine]:\n");
+    printf("[mine]: %s\n", mystrcpy(mycpyDest, mycpySrc));
 
     char mycatDest [256] = "goodbye";
     char mycatSrc [] = "ciao";
