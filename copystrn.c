@@ -53,6 +53,14 @@ int mystrcmp(char * s1, char * s2){
 int main(){
 	char dest [256] = "blahcdahhaha";
 	char myDest [256] = "blahcdahhaha";
+
+	char Test2 [256] = "yaa";
+	char myTest2 [256] = "yaa";
+
+	char Test3 [256] = "ya";
+	char myTest3 [256] = "yab";
+
+
 	char src[] = "ciao";
 	/*   char * myPoint = myDest;
 	char src[] = "ciao";
@@ -66,10 +74,22 @@ int main(){
 	int yab = strcmp(dest, myDest);
 	int myYab = mystrcmp(dest,myDest);
 
+	int tes2 = strcmp(Test2, myTest2);
+	int mytes2 = mystrcmp(Test2, myTest2);
+
+	int tes3 = strcmp(Test3, myTest3);
+	int mytes3 = mystrcmp(Test3, myTest3);
+
 	printf("prints destination string: %s\n",dest);
 	printf("prints MINEdestination string: %s\n",myDest);
-	printf("comparison: %d\n", yab);
-	printf("comparison: %d\n", myYab);
+	printf("comparison1: %d\n", yab);
+	printf("comparison1: %d\n", myYab);
+
+	printf("comparison2: %d\n", tes2);
+	printf("comparison2: %d\n", mytes2);
+
+	printf("comparison3: %d\n", tes3);
+	printf("comparison3: %d\n" ,mytes3);
 	//printf("prints destination string length: %d\n",len);
 	return 0;
 }
