@@ -86,6 +86,12 @@ int main(){
 	char * ch = strchr(myDest, 'a');
 	char * mych = mystrchr(myDest,'a');
 
+	char * ch2 = strchr(myDest,'d');
+	char * mych2 = mystrchr(myDest,'a');
+	
+	char * ch3 = strchr(myDest, 'h');
+	char * mych3 = mystrchr(myDest, 'h');
+
 	int yab = strcmp(dest, myDest);
 	int myYab = mystrcmp(dest,myDest);
 
@@ -108,6 +114,13 @@ int main(){
 
 	printf("strchr: %s\n", ch);
 	printf("mystrchr %s\n", mych);
+
+	printf("strchr: %s\n", ch2);
+	printf("mystrchr %s\n", mych2);
+
+	printf("strchr: %s\n", ch3);
+	printf("mystrchr %s\n", mych3);
+
 
 	//printf("prints destination string length: %d\n print,len);
 	return 0;
