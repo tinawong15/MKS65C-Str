@@ -47,6 +47,16 @@ int mystrcmp(char * s1, char * s2){
 	return 0;
 	}	
 	
+char * mystrchr(char * s,char c){
+	char * ansPoint = s;
+	char * chrPoint = s;
+	for(int i = 0; i < strlen(s); i ++){
+	if(*(chrPoint + i) == c){
+	return (chrPoint + i);
+	}
+	}
+	return ansPoint;
+}
 	
 
 
@@ -71,6 +81,11 @@ int main(){
 	*/
 	strncat(dest,src,3);
 	mystrncat(myDest,src,4);
+
+	
+	char * ch = strchr(myDest, 'a');
+	char * mych = mystrchr(myDest,'a');
+
 	int yab = strcmp(dest, myDest);
 	int myYab = mystrcmp(dest,myDest);
 
@@ -90,7 +105,11 @@ int main(){
 
 	printf("comparison3: %d\n", tes3);
 	printf("comparison3: %d\n" ,mytes3);
-	//printf("prints destination string length: %d\n",len);
+
+	printf("strchr: %s\n", ch);
+	printf("mystrchr %s\n", mych);
+
+	//printf("prints destination string length: %d\n print,len);
 	return 0;
 }
 	
