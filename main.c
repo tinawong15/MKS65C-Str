@@ -33,8 +33,10 @@ int main() {
     printf("Testing strcmp with %s and %s\n", cmps0, cmps1);
     printf("[standard]: %d\n", strcmp(cmps0, cmps1));
     printf("[mine]: %d\n", mystrcmp(mycmps0, mycmps1));
+    printf("Testing strcmp with %s and %s\n", mycmps2, cmps2);
     printf("[standard]: %d\n", strcmp(mycmps2, cmps2));
     printf("[mine]: %d\n", mystrcmp(mycmps2, cmps2));
+    printf("Testing strcmp with %s and %s\n", cmps1, cmps0);
     printf("[standard]: %d\n", strcmp(cmps1, cmps0));
     printf("[mine]: %d\n", mystrcmp(mycmps1, cmps0));
 
@@ -49,6 +51,7 @@ int main() {
     printf("Testing strchr with %s and %c\n", mys, myc);
     printf("[standard]: %s\n", strchr(s, c));
     printf("[mine]: %s\n", mystrchr(mys, myc));
+    printf("Testing strchr with %s and %c\n", s1, c1);
     printf("[standard]: %s\n", strchr(s1, c1));
     printf("[mine]: %s\n", mystrchr(mys1, myc1));
     return 0;
