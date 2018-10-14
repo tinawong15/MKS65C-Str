@@ -40,38 +40,34 @@ int mystrcmp( char *s1, char *s2 ) {
   int lenS1 = mystrlen(s1);
   int lenS2 = mystrlen(s2);
   int lenComp = 0;
-
+  int i;
   if(lenS1 >= lenS2) {
     lenComp = lenS1;
   }
   if(lenS2 > lenS1) {
     lenComp = lenS2;
   }
-
-  for(int i = 0; i < lenComp ; i ++) {
+  for(i = 0; i < lenComp ; i ++) {
     if(*(myPointCmpOne + i) > *(myPointCmpTwo + i)) {
       return 1;
     }
-
     if(*(myPointCmpOne + i) < *(myPointCmpTwo + i)) {
       return -1;
     }
   }
-
   if(lenS1 > lenS2) {
     return 1;
   }
   if(lenS2 > lenS1) {
     return -1;
   }
-
   return 0;
 }
 
 char * mystrchr( char *s, char c ) {
   char * ansPoint = s;
   char * chrPoint = s;
-  for(int i = 0; i < strlen(s); i ++){
+  for(int i = 0; i < mystrlen(s); i ++){
     if(*(chrPoint + i) == c){
       return (chrPoint + i);
     }
